@@ -4,11 +4,35 @@
 package org.example;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+  public String getGreeting() {
+    return "Hello World!";
+  }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+  public static void main(String[] args) {
+    System.out.println(new App().getGreeting());
+
+    int a = 2;
+    int b = 3;
+    int sumAB = a + b;
+    double avgAB = sumAB / 2.0;
+    System.out.println("Sum of " + a + " and " + b + " is " + sumAB + ". Average is " + avgAB + ".");
+
+    int sum1to10 = 0;
+    for (int i = 1; i <= 10; i++) {
+      sum1to10 += i;
     }
+    double avg1to10 = sum1to10 / 10.0;
+    System.out.println("Sum of 1 to 10 is " + sum1to10 + ". Average is " + avg1to10 + ".");
+
+    int sumOdd = 0;
+    int sumEven = 0;
+    for (int i = 1; i <= 10; i++) {
+      if (i % 2 == 0) {
+        sumEven += i;
+      } else {
+        sumOdd += i;
+      }
+    }
+    System.out.println("Sum of odd of 1 to 10 is " + sumOdd + ". Sum of even is " + sumEven + ".");
+  }
 }
