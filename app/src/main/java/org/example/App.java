@@ -12,18 +12,18 @@ public class App {
     App app = new App();
     System.out.println(app.getGreeting());
 
-    Calculator calculator = new Calculator();
+    Calculate Calculate = new Calculate();
 
-    int sum1 = calculator.sum(2, 3);
-    double avg1 = calculator.average(sum1, 2);
+    int sum1 = Calculate.sum(2, 3);
+    double avg1 = Calculate.average(sum1, 2);
     System.out.println("Sum of 2 and 3 is " + sum1 + ". Average is " + avg1 + ".");
 
-    int sum2 = calculator.sumRange(1, 10);
-    double avg2 = calculator.average(sum2, 10);
+    int sum2 = Calculate.sumRange(1, 10);
+    double avg2 = Calculate.average(sum2, 10);
     System.out.println("Sum of 1 to 10 is " + sum2 + ". Average is " + avg2 + ".");
 
-    int sumOdd = calculator.sumOdd(1, 10);
-    int sumEven = calculator.sumEven(1, 10);
+    int sumOdd = Calculate.sumOdd(1, 10);
+    int sumEven = Calculate.sumEven(1, 10);
     System.out.println("Sum of odd of 1 to 10 is " + sumOdd + ". Sum of even is " + sumEven + ".");
   }
 }

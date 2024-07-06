@@ -15,31 +15,31 @@ public class AppTest {
 
   @Test
   public void testSum() {
-    Calculator calculator = new Calculator();
-    assertEquals(5, calculator.sum(2, 3));
+    Calculate Calculate = new Calculate();
+    assertEquals(5, Calculate.sum(2, 3));
   }
 
   @Test
   public void testAverage() {
-    Calculator calculator = new Calculator();
-    assertEquals(2.5, calculator.average(5, 2), 0.01);
+    Calculate Calculate = new Calculate();
+    assertEquals(2.5, Calculate.average(5, 2), 0.01);
   }
 
   @Test
   public void testSumRange() {
-    Calculator calculator = new Calculator();
-    assertEquals(55, calculator.sumRange(1, 10));
+    Calculate Calculate = new Calculate();
+    assertEquals(55, Calculate.sumRange(1, 10));
   }
 
   @Test
   public void testSumOdd() {
-    Calculator calculator = new Calculator();
-    assertEquals(25, calculator.sumOdd(1, 10));
+    Calculate Calculate = new Calculate();
+    assertEquals(25, Calculate.sumOdd(1, 10));
   }
 
   @Test
   public void testSumEven() {
-    Calculator calculator = new Calculator();
-    assertEquals(30, calculator.sumEven(1, 10));
+    Calculate Calculate = new Calculate();
+    assertEquals(30, Calculate.sumEven(1, 10));
   }
 }
