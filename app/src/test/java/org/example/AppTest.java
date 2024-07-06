@@ -14,38 +14,32 @@ public class AppTest {
   }
 
   @Test
-  public void testSumAndAverage() {
-    int a = 2;
-    int b = 3;
-    int sum = a + b;
-    double average = sum / 2.0;
-    assertEquals(5, sum);
-    assertEquals(2.5, average, 0.0);
+  public void testSum() {
+    Calculator calculator = new Calculator();
+    assertEquals(5, calculator.sum(2, 3));
   }
 
   @Test
-  public void testSum1to10() {
-    int sum = 0;
-    for (int i = 1; i <= 10; i++) {
-      sum += i;
-    }
-    double average = sum / 10.0;
-    assertEquals(55, sum);
-    assertEquals(5.5, average, 0.0);
+  public void testAverage() {
+    Calculator calculator = new Calculator();
+    assertEquals(2.5, calculator.average(5, 2), 0.01);
   }
 
   @Test
-  public void testSumOddAndEven1to10() {
-    int sumOdd = 0;
-    int sumEven = 0;
-    for (int i = 1; i <= 10; i++) {
-      if (i % 2 == 0) {
-        sumEven += i;
-      } else {
-        sumOdd += i;
-      }
-    }
-    assertEquals(25, sumOdd);
-    assertEquals(30, sumEven);
+  public void testSumRange() {
+    Calculator calculator = new Calculator();
+    assertEquals(55, calculator.sumRange(1, 10));
+  }
+
+  @Test
+  public void testSumOdd() {
+    Calculator calculator = new Calculator();
+    assertEquals(25, calculator.sumOdd(1, 10));
+  }
+
+  @Test
+  public void testSumEven() {
+    Calculator calculator = new Calculator();
+    assertEquals(30, calculator.sumEven(1, 10));
   }
 }
